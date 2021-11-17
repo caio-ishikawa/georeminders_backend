@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const secrets = require('./secrets');
 const dotenv = require('dotenv').config();
 
 // EXPRESS + CORS SETUP //
