@@ -18,7 +18,7 @@ app.use('/auth', authRoutes);
 app.use('/post', postRoutes);
 
 // DATABASE CONNECTION //
-mongoose.connect(process.env.CONNECTION_STRING, (err) => {
+mongoose.connect("mongodb+srv://" + process.env.DB_USERNAME+":" + process.env.DB_PASSWORD + "@laravel1.q2vv7.mongodb.net/georeminders?retryWrites=true&w=majority", (err) => {
     if (err) {
         console.log(err);
     } else {
